@@ -1,0 +1,353 @@
+/* ====== Global Layout ====== */
+.app-container {
+  background: #f9fafb;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111827;
+}
+
+.dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ====== Header Section ====== */
+.header-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.header-icon {
+  background: #2563eb;
+  padding: 0.5rem;
+  border-radius: 9999px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* ====== Metrics Dashboard ====== */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+}
+
+.metric-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+
+.metric-sub {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  color: #6b7280;
+}
+
+.metric-icon {
+  padding: 0.75rem;
+  border-radius: 9999px;
+}
+
+/* Borders */
+.border-blue { border-color: #3b82f6; }
+.border-green { border-color: #22c55e; }
+.border-emerald { border-color: #10b981; }
+.border-red { border-color: #ef4444; }
+.border-purple { border-color: #8b5cf6; }
+
+/* Text Colors */
+.text-blue { color: #3b82f6; }
+.text-green { color: #22c55e; }
+.text-emerald { color: #10b981; }
+.text-red { color: #ef4444; }
+.text-purple { color: #8b5cf6; }
+.text-gray { color: #6b7280; }
+
+/* Background Colors */
+.bg-blue { background: #dbeafe; }
+.bg-green { background: #dcfce7; }
+.bg-emerald { background: #d1fae5; }
+.bg-red { background: #fee2e2; }
+.bg-purple { background: #ede9fe; }
+
+/* ====== Icons ====== */
+.icon-lg { width: 2rem; height: 2rem; }
+.icon-md { width: 1.5rem; height: 1.5rem; }
+.icon-sm { width: 1.25rem; height: 1.25rem; }
+.icon-xs { width: 1rem; height: 1rem; }
+.icon-xl { width: 3rem; height: 3rem; }
+
+/* ====== Analytics Grid ====== */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.analytics-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.analytics-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.analytics-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.analytics-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.analytics-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.no-data {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+/* ====== Controls ====== */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.controls-right {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.input {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Buttons */
+.btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-blue {
+  background: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-blue:hover {
+  background: #1d4ed8;
+}
+
+.btn-gray {
+  background: #e5e7eb;
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-gray:hover {
+  background: #d1d5db;
+}
+
+/* ====== Form ====== */
+.form-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.form-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* ====== Table ====== */
+.table-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.table-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.table-sub {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th {
+  text-align: left;
+  padding: 0.75rem;
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-empty {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+}
+
+.hold-days {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.table-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+}
+
+.action-btn:hover {
+  background: #f3f4f6;
+}

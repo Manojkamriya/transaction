@@ -1,0 +1,95 @@
+/* General Layout */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.empty {
+  color: gray;
+}
+
+/* Form */
+.form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-secondary {
+  background: #0891b2;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn-warning {
+  background: #f59e0b;
+  color: white;
+  margin-right: 5px;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: white;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+thead {
+  background: #f3f4f6;
+}
+
+/* Investment Result */
+.investment {
+  margin-top: 20px;
+}
+
+.result {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
