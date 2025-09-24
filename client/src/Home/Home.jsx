@@ -34,11 +34,12 @@ export default function StockPortfolioTracker() {
   const [sortBy, setSortBy] = useState("buyDate");
 
 
-    const fetchTransactions = async () => {
-  const res = await fetch("http://localhost:5000/api/transactions");
+  const fetchTransactions = async () => {
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/transactions`);
   const data = await res.json();
   setTransactions(data);
 };
+
 
 useEffect(() => {
   fetchTransactions();
@@ -199,14 +200,14 @@ const handleFormSubmit = async () => {
 
   if (formData.id) {
     // If editing → Update (PUT)
-    await fetch(`http://localhost:5000/api/transactions/${formData.id}`, {
+    await fetch(`${import.meta.env.VITE_API_URL}/transactions/${formData.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newTransaction)
     });
   } else {
     // If new → Create (POST)
-    await fetch("http://localhost:5000/api/transactions", {
+    await fetch(`${import.meta.env.VITE_API_URL}/transactions`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newTransaction)
@@ -247,7 +248,7 @@ const handleFormSubmit = async () => {
   const confirmDelete = window.confirm("Are you sure you want to delete this transaction?");
   if (!confirmDelete) return;
 
-  await fetch(`http://localhost:5000/api/transactions/${id}`, {
+  await fetch(`${import.meta.env.VITE_API_URL}/transactions/${id}`, {
     method: "DELETE"
   });
 
